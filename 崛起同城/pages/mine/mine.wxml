@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="content">
+    <view class="top">
+      <image src="{{ userInfo.portrait}}" class="touxiang"></image>
+      <button class="name" open-type="getUserInfo" wx:if="{{!userInfo}}" style="display:{{zt?'none':'block'}}"
+        bindgetuserinfo="doAuthorization">登录</button>
+      <view class="username">{{userInfo.nickname}}</view>
+      <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" wx-if="{{phone==1}}"
+        class="aa {{stat? 'to-top' : 'to-bottom'}}">是否电话授权</button>
+    </view>
+  </view>
+  <view class="anniu" bindtap="go" data-url="../baomingjilu/baomingjilu">
+    <text>报名记录</text>
+  </view>
+  <view class="anniu" bindtap="invitation">
+    <text>邀请好友</text>
+  </view>
+  <view class="anniu" bindtap="go" data-url="../wsmessage/wsmessage">
+    <text>完善资料</text>
+  </view>
+  <view class="anniu" bindtap="go" data-url="san">
+    <text>扫一扫</text>
+  </view>
+  <view class="anniu" bindtap="go" data-url="logout">
+    <text>安全退出</text>
+  </view>
+</view>

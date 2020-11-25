@@ -1,0 +1,25 @@
+.content{
+  border-top:1rpx solid #EAEAEA;
+  padding-bottom:20rpx
+}
+.title1{
+  padding:50rpx 0 20rpx 4%;
+  width:450rpx;
+  font-size:34rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.phone{
+  padding:4rpx 0 4rpx 4%;
+}
+.time{
+  padding:4rpx 0 40rpx 4%;
+}
+.saomashijian{
+  padding:20rpx 0;
+  background:#EDF1FA;
+ text-align:center;
+ font-size:30rpx
+}
+

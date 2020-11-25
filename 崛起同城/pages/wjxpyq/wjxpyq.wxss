@@ -1,0 +1,89 @@
+@import "../../iconfont/iconfont.wxss";
+
+.container {
+  background: #F7F7F7;
+  height: 100vh
+}
+
+textarea {
+  width: 94%;
+  margin: 20rpx auto
+}
+
+.content1 {
+  width: 100%;
+  padding-bottom: 30rpx;
+  background: white
+}
+
+/* 添加照片 */
+.add {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20rpx
+}
+
+.addphoto {
+  width: 29%;
+  height: 240rpx;
+  text-align: center;
+  font-size: 120rpx;
+  margin-left: 3%;
+  margin-top: 3%;
+  background: #F3F1F4;
+  line-height: 240rpx;
+  font-weight: 200;
+  color: #858585;
+  position: relative
+}
+
+.cancel {
+  position: absolute;
+  top: -114rpx;
+  left: 193rpx;
+  font-size: 43rpx;
+  color: black
+}
+
+.addphoto image {
+  width: 100%;
+  height: 100%
+}
+
+.content2 {
+  margin-top: 10px;
+  background: white;
+  padding: 40rpx 0 40rpx 20rpx;
+  font-size: 32rpx;
+
+}
+
+.bq {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.bqs {
+  padding: 10rpx 20rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  border-radius: 40rpx;
+  background: #fafafa;
+  color: #666666;
+  text-align: center;
+  font-size: 30rpx
+}
+
+.content3 {
+  margin-top: 100rpx
+}
+
+.tijiao {
+  width: 600rpx !important;
+  padding: 20rpx 0;
+  text-align: center;
+  background: #FF804C;
+  color: white;
+  border-radius: 50rpx
+}

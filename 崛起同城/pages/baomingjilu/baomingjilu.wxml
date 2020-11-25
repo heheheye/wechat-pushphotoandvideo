@@ -1,0 +1,52 @@
+<view class="container">
+  <view class="content">
+    <view class="menu_box">
+
+      <text wx:for="{{pagelist}}" wx:key="index" class='menu {{menuTapCurrent==index?"borders":""}}'
+        data-current="{{index}}" catchtap="menuTap">{{item}}</text>
+    </view>
+    <view class="tab1" hidden="{{menuTapCurrent!='0'}}">
+      <view class="body2">
+        <view class="body2-concent" wx:for="{{res}}" wx:key="index" wx:for-item="item">
+          <view class="b22">
+            <view class="left">
+              <image src="http://tc.mb.cjsit.cn/{{item.hospital.image}}" bindtap="xiangqing"></image>
+            </view>
+            <view class="right">
+              <view class="right1" bindtap="xiangqing">{{item.hospital.name}}</view>
+              <view class="right2">
+                <view class="text1">地址：</view>
+                <view class="text2">{{item.hospital.address}}</view>
+              </view>
+              <view class="right3">
+                <text>时间:</text>
+                <text>{{item.hospital.star_time}}</text></view>
+            </view>
+          </view>
+          <view class="huodongma">
+            <view class="one" bindtap="btn">
+              <image src="{{item.ewm}}"></image>
+            </view>
+            <view class="xian">
+              <view class="xian2"></view>
+            </view>
+            <view class="bmsj">
+              <view>报名时间</view>
+              <view>{{item.order_id}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+      <view class="modalDlg" wx:if="{{showModal}}" wx:for="{{res}}" wx:key="index" wx:for-item="item">
+        <view class="viewa">
+          <image src="{{item.ewm}}">
+          </image>
+        </view>
+        <view bindtap="ok" class="ok">活动码</view>
+      </view>
+    </view>
+    <view class="tab2" hidden="{{menuTapCurrent!='1'}}"></view>
+    <view class="tab3" hidden="{{menuTapCurrent!='2'}}"></view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="content">
+    <view wx:for="{{list1}}" wx:key="index">
+      <view class="title1">{{item.title1}}</view>
+      <view class="phone">
+        电话：{{item.phone}}
+      </view>
+      <view class="time">
+        时间：{{item.time}}
+      </view>
+      <view class="saomashijian">
+        扫码时间：{{item.saomashijian}}
+      </view>
+    </view>
+  </view>
+ 
+</view>

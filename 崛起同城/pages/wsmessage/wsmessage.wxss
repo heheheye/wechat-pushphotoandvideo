@@ -1,0 +1,57 @@
+.content-body2 {
+  background: #EAF0F0;
+  border: 2px solid #EAF0F0
+}
+
+.cb2-body {
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  margin-top: 4rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  background: white
+}
+
+.cb2-left {
+  margin-left: 20rpx
+}
+
+.cb2-right {
+  margin-right: 20rpx
+}
+
+button {
+  margin-top: 720rpx;
+  background-color: #009788;
+  border-radius: 0rpx;
+  color: #ffffff
+}
+
+.button-sp-area {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.mini-btn {
+  margin-right: 10rpx;
+}
+
+input {
+  border: 1px solid white;
+  margin-top: 20rpx;
+  text-align: right;
+}
+
+
+.btn {
+  width: 80px;
+  height: 35px;
+  background: #44b549;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  margin: 20px auto;
+  border-radius: 100px;
+}

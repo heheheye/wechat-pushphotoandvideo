@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="content">
+    <view class="content-body2">
+      <form catchsubmit="formSubmit" catchreset="formReset">
+        <view class="cb2-body">
+          <view class="cb2-left">姓名</view>
+          <view class="cb2-right"><input name="姓名" placeholder="{{ real_name}}" model:value="{{ real_name }}"></input>
+          </view>
+        </view>
+        <view class="cb2-body">
+          <view class="cb2-left">性别</view>
+          <view class="cb2-right"><input name="性别" placeholder="{{sex}}" model:value="{{sex}}"></input></view>
+        </view>
+        <view class="cb2-body">
+          <view class="cb2-left">备注</view>
+          <view class="cb2-right">
+            <input type="text" name="备注" placeholder="{{mark}}" model:value="{{mark}}"></input>
+          </view>
+        </view>
+        <view>
+          <button style="width:100vw" bindtap="sub">
+            保存
+          </button>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>

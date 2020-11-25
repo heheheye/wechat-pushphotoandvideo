@@ -1,0 +1,159 @@
+@import "../../iconfont/iconfont.wxss";
+
+page {
+  height: 100%
+}
+
+.scroll-lock {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.container {
+  background: #F7F7F7;
+  min-height: 100vh;
+}
+
+.content1 {
+  width: 100%;
+  padding-bottom: 10rpx;
+  background: white;
+}
+
+textarea {
+  width: 94%;
+  margin: 20rpx auto;
+  padding: 40rpx 0;
+}
+.content2 {
+  margin-top: 10px;
+  background: white;
+  padding: 40rpx 0 40rpx 20rpx;
+  font-size: 32rpx;
+}
+.bq {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.bqs {
+  padding: 10rpx 20rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  border-radius: 40rpx;
+  background: #fafafa;
+  color: #666666;
+  text-align: center;
+  font-size: 30rpx
+}
+
+/* 图片添加 */
+.uploadPic {
+  padding: 35rpx 20rpx 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+movable-area {
+  width: 100%;
+  height: 100%;
+}
+
+.uploadPic-ul {
+  box-sizing: border-box;
+  position: relative !important
+}
+
+.uploadPic-ul-wrap {
+  width: 765rpx;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rpx 10rpx;
+  height: 100%
+}
+
+.uploadPic-li {
+  width: 200rpx;
+  height: 230rpx;
+  position: relative;
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.uploadPic-li .uploadPic-li-camer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #f2f2f2;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding-top: 100rpx;
+  text-align: center;
+  font-size: 100rpx;
+  color: #aaa;
+  line-height: 28rpx;
+}
+
+.uploadPic-li-pic {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200rpx;
+  height: 230rpx;
+}
+movable-view{
+  z-index:2
+}
+movable-view,
+movable-view .item-move,
+movable-view .item-move image {
+  width: 200rpx;
+  height: 230rpx !important;
+}
+.uploadPic-li-fm {
+  width: 100%;
+  height: 35rpx;
+  line-height: 35rpx;
+  text-align: center;
+  background-color: #ff7500;
+  font-size: 24rpx;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.uploadPic-li-close {
+  width: 23rpx;
+  height: 23rpx;
+  padding: 10rpx;
+  position: absolute;
+  right: -22rpx;
+  top: -22rpx;
+}
+
+.uploadPicB {
+  width: 86%;
+  margin: 120rpx auto 0;
+  background: #F7F7F7;
+  padding-bottom: 30rpx
+}
+
+.uploadPicB-msg {
+  padding-left: 33rpx;
+  color: #666;
+  font-size: 28rpx;
+  line-height: 32rpx;
+}
+
+.uploadPicB-btn {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  margin-top: 35rpx;
+  background-color: #ff7500;
+}

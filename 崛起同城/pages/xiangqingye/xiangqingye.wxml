@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="content">
+    <view class="top">
+      <image src="{{xiangqing.image}}"></image>
+    </view>
+    <view class="body">
+      <view class="b-head">{{xiangqing.name}}</view>
+      <view class="b2">活动地址:{{xiangqing.address}} </view>
+      <view class="b3">活动时间：<text>{{star_time}}</text></view>
+      <view class="b4">
+        <view>官方电话：{{xiangqing.phone}}</view>
+        <view>已报名 521人</view>
+      </view>
+    </view>
+    <view class="body2">
+      <view class="jieshao">活动介绍: </view>
+      <rich-text nodes="{{xiangqing.content}}"></rich-text>
+    </view>
+    <view class="lijibaoming {{stat?'aa':'bb'}}" bindtap="lijibaoming"  open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" >立即报名</view>
+  </view>
+  <!--  -->
+</view>

@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="top">
+      <view class="page-body">
+        <view class="page-section page-section-spacing swiper">
+          <swiper circular autoplay indicator-color="white" indicator-active-color="#1c7af2" indicator-dots>
+            <block wx:for="{{banner}}" wx:key="*this">
+              <swiper-item>
+                <view class="swiper-item">
+                  <image src="http://tc.mb.cjsit.cn/{{item.image}}"> </image>
+                </view>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+      </view>
+      <!--  -->
+    </view>
+    <view class="body1">
+      <view class="baomingjilu" bindtap="qiehuan" data-cid="0" style="color:{{ cid==0?'red':'#ccc' }}">
+        <view class="max">精选</view>
+      </view>
+      <block wx:for="{{category}}" wx:key="index">
+        <view class="yaoqinghaoyou" bindtap="qiehuan" data-cid="{{item.id}}"
+          style="color:{{cid==item.id?'red':'#ccc'}}">
+          <view class="max">{{item.cate_name}}</view>
+        </view>
+      </block>
+    </view>
+   
+  </view>
+  <scroll-view class="body2" scroll-y bindscrolltolower="tolower" style="height:{{ height }}px;">
+      <view class="body2-concent" wx:for="{{hospital}}" wx:key="index" data-id="{{item.id}}" bindtap="go">
+        <view class="left">
+          <image src="{{item.image}}" bindtap="xiangqing"></image>
+        </view>
+        <view class="right">
+          <view class="right1" bindtap="xiangqing">{{item.name}}</view>
+          <view class="right2">
+            <view class="text1">地址：</view>
+            <view class="text2">{{item.address}}</view>
+          </view>
+          <view class="right3">
+            <text>时间:</text>
+            <text>{{item.star_time}}</text></view>
+        </view>
+      </view>
+      <view class="more">{{ text }}</view>
+    </scroll-view>
+</view>

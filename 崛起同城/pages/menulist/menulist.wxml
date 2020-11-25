@@ -1,0 +1,65 @@
+<view class="container {{isStopBodyScroll ? 'scroll-lock' : ''}}" style="background:{{zt?'#8C8C8C':'white'}}">
+  <view class="content">
+    <view class="top">
+      <view class="title" style="background:{{zt?'#8B2B2C':'#FF4F51'}}"><text
+          class="iconfont icon-weixian"></text>请勿上传含二维码的图片，重新调整图片后在发布。</view>
+      <view class="buju concent-body">
+        <textarea type="text" placeholder="品牌型号，新旧程度，入手渠道，转手原因..." placeholder-style="font-size:30rpx;color：#BABABA"
+          maxlength="1000" auto-height="true">
+        </textarea>
+        <!-- 添加图片 -->
+        <view class='uploadPic'>
+          <view class='uploadPic-ul'>
+            <movable-area class='uploadPic-ul-wrap clearfix'>
+              <view wx:for="{{tempFilePaths}}" wx:key="path" class='uploadPic-li uploadPic-li-item'
+                data-index='{{index}}' bindlongpress='_longtap' bindtouchstart='touchs' bindtouchend='touchend'
+                bindtouchmove='touchm' data-img='{{item.path}}'>
+                <image class='uploadPic-li-pic' src='{{item.path}}'></image>
+                <view class='uploadPic-li-close iconfont icon-quxiao' bindtap='delimg' data-keyindex="{{index}}"></view>
+              </view>
+              <movable-view x="{{x}}" y="{{y}}" wx:if='{{!hidden}}' direction="all" damping="{{5000}}"
+                disabled="{{disabled}}">
+                <view class='item-move'>
+                  <image class='uploadPic-li-pic' src="{{maskImg}}" mode="widthFix"></image>
+                </view>
+              </movable-view>
+              <!-- 添加图片按钮 -->
+              <view class='uploadPic-li' bindtap="uploadpic" wx:if="{{tempFilePaths.length<imgnum}}">
+                <view class='uploadPic-li-camer iconfont icon-tianjiajiahaowubiankuang'
+                  style="background:{{zt?'#848484':'white'}}"></view>
+              </view>
+            </movable-area>
+          </view>
+        </view>
+        <!-- 价格 -->
+        <view class="price {{zt?'price2':''}}">
+          <view><text class="iconfont icon-piaoju"></text><text>价格</text></view>
+          <view><text>￥0.00</text><text class="iconfont icon-jiantou"></text></view>
+        </view>
+        <!-- 分类 -->
+        <view class="fenlei">
+          <view class="fenlei-top">
+            <view>分类</view>
+            <view class="iconfont icon-jiantou"></view>
+          </view>
+          <view class="fenlei-concent">
+            <view class="quanbu" bindtap="fenlei">全部 <text class="iconfont icon-jiantou"></text></view>
+          </view>
+        </view>
+        <!--常用选项 -->
+        <view class="changyong">
+          <view class="changyong-top">
+            <view>常用选项</view>
+            <view></view>
+          </view>
+          <view class="changyong-concent">
+            <view class="choose" bindtap="choose" wx:for="{{choose}}" wx:key="index" data-id="{{index}}">{{item}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="menu-tabs" wx:if="{{zt}}">
+    <view bindtap="choosefenlei" wx:for="{{list}}" wx:key="index">{{item}}</view>
+  </view>
+</view>

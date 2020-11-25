@@ -1,0 +1,5 @@
+@import "./iconfont/iconfont.wxss";
+button {
+  outline: none;
+  border: none;
+}

@@ -1,0 +1,231 @@
+@import "../../iconfont/iconfont.wxss";
+
+page {
+  height: 100%
+}
+.container {
+  min-height: 100vh;
+  padding-bottom:10rpx
+}
+.scroll-lock {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.title {
+  background: #FF4F51;
+  padding: 20rpx 30rpx 20rpx;
+  font-size: 24rpx;
+  color: white
+}
+
+/* 多用 */
+.buju {
+  width: 94%;
+  margin: 0 auto;
+
+}
+
+.icon-weixian {
+  font-size: 40rpx
+}
+
+textarea {
+  padding: 40rpx 0;
+  width: 100%;
+}
+/* 价格 */
+.price {
+  font-size: 30rpx;
+  padding: 30rpx 20rpx;
+  border-top: 1px solid #F3F1F4;
+  border-bottom: 1px solid #F3F1F4;
+  display: flex;
+  justify-content: space-between;
+}
+.price2{
+  border-bottom: 1px solid #878787;
+  border-top: 1px solid #878787
+}
+/* 分类 */
+.fenlei {
+  font-size: 30rpx;
+  margin-top: 30rpx
+}
+
+.fenlei-top,
+.changyong-top {
+  display: flex;
+  padding: 10rpx 20rpx 0;
+  justify-content: space-between;
+  color: #A7A7A7;
+  font-size: 30rpx
+}
+
+.fenlei-concent {
+  height: 100rpx;
+  padding: 30rpx 30rpx 0
+}
+
+.quanbu {
+  padding: 10rpx 20rpx;
+  border-radius: 40rpx;
+  width: 140rpx;
+  border: 1px solid #F3F1F4;
+  text-align: center;
+  font-size: 28rpx
+}
+
+.changyong-top {
+  display: flex;
+  padding: 10rpx 20rpx 0;
+  justify-content: space-between;
+  color: #A7A7A7;
+  font-size: 30rpx
+}
+
+.changyong-concent {
+  display: flex;
+  margin-top: 20rpx;
+  flex-wrap: wrap;
+  padding: 10rpx 30rpx 0
+}
+
+.choose {
+  padding: 10rpx 20rpx;
+  border-radius: 40rpx;
+  width: 100rpx;
+  border: 1px solid #F3F1F4;
+  text-align: center;
+  font-size: 28rpx;
+  margin-left: 30rpx;
+  margin-top: 10rpx
+}
+
+.menu-tabs {
+  position: fixed;
+  bottom: 0;
+  background: white;
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 40rpx;
+  width: 100%
+}
+
+.menu-tabs view {
+  border-bottom: 1px solid #F3F1F4;
+  padding: 30rpx 0;
+  font-size: 40rpx;
+  text-align: center
+}
+
+/* 添加图片 */
+
+.uploadPic {
+  padding: 35rpx 20rpx 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+movable-area {
+  width: 100%;
+  height: 100%;
+}
+
+.uploadPic-ul {
+  box-sizing: border-box;
+  position: relative !important
+}
+
+.uploadPic-ul-wrap {
+  width: 765rpx;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rpx 10rpx;
+  height: 100%
+}
+
+.uploadPic-li {
+  width: 200rpx;
+  height: 230rpx;
+  position: relative;
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.uploadPic-li .uploadPic-li-camer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #f2f2f2;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding-top: 100rpx;
+  text-align: center;
+  font-size: 100rpx;
+  color: #aaa;
+  line-height: 28rpx;
+}
+
+.uploadPic-li-pic {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200rpx;
+  height: 230rpx;
+}
+
+movable-view,
+movable-view .item-move,
+movable-view .item-move image {
+  width: 200rpx;
+  height: 230rpx !important;
+}
+
+.uploadPic-li-fm {
+  width: 100%;
+  height: 35rpx;
+  line-height: 35rpx;
+  text-align: center;
+  background-color: #ff7500;
+  font-size: 24rpx;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.uploadPic-li-close {
+  width: 23rpx;
+  height: 23rpx;
+  padding: 10rpx;
+  position: absolute;
+  right: -22rpx;
+  top: -22rpx;
+}
+
+.uploadPicB {
+  width: 86%;
+  margin: 120rpx auto 0;
+  background: #F7F7F7;
+  padding-bottom: 30rpx
+}
+
+.uploadPicB-msg {
+  padding-left: 33rpx;
+  color: #666;
+  font-size: 28rpx;
+  line-height: 32rpx;
+}
+
+.uploadPicB-btn {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  margin-top: 35rpx;
+  background-color: #ff7500;
+}

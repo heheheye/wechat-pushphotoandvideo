@@ -1,0 +1,53 @@
+/* .top {
+  background: #4972EF;
+  height: 400rpx
+} */
+
+.container {
+  background: #EDF1FA
+}
+
+.body {
+  padding: 30rpx 4%;
+  background: white
+}
+
+.b-head {
+  font-size: 40rpx;
+  padding: 3rpx 0 5rpx
+}
+
+.b2,
+.b3,
+.b4 {
+  font-size: 28rpx;
+  color: #565656
+}
+
+.b3 text {
+  font-size: 34rpx;
+  color: #D6696D
+}
+
+.b4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body2 {
+  margin-top: 20rpx;
+  background: white;
+  padding: 30rpx 4%
+}
+
+.lijibaoming {
+  padding: 30rpx 0;
+  text-align: center;
+  background: #4972EF;
+  color: white;
+  position:fixed;
+  width:100%;
+  bottom:0
+}
+.aa{display:block}
+.bb{display:none}

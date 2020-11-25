@@ -1,0 +1,42 @@
+<!-- 上传图片 -->
+<view class="container {{isStopBodyScroll ? 'scroll-lock' : ''}}">
+  <view class="content1">
+    <textarea type="text" placeholder="高清精美水果图片分享,给最好的盆友吧!好盆友们都来收藏吧" placeholder-style="font-size:30rpx;color:black"
+      maxlength="1000" auto-height="true">
+        </textarea>
+    <view class='uploadPic'>
+      <view class='uploadPic-ul'>
+        <movable-area class='uploadPic-ul-wrap clearfix'>
+          <view wx:for="{{tempFilePaths}}" wx:key="path" class='uploadPic-li uploadPic-li-item' data-index='{{index}}'
+            bindlongpress='_longtap' bindtouchstart='touchs' bindtouchend='touchend' bindtouchmove='touchm'
+            data-img='{{item.tempFilePath}}' data-id='{{index}}'>
+            <image class='uploadPic-li-pic' src='{{item.tempFilePath}}' wx:if="{{item.fileType==='image'}}"></image>
+            <video src="{{item.tempFilePath}}" autoplay="true" class='uploadPic-li-pic'
+              wx:if="{{item.fileType==='video'}}"></video>
+            <view class='uploadPic-li-close iconfont icon-quxiao' bindtap='delimg' data-keyindex="{{index}}"></view>
+          </view>
+          <movable-view x="{{x}}" y="{{y}}" wx:if='{{!hidden}}' direction="all" damping="{{5000}}"
+            disabled="{{disabled}}">
+            <view class='item-move'>
+              <image class='uploadPic-li-pic' src="{{maskImg}}" mode="widthFix"></image>
+            </view>
+          </movable-view>
+          <!-- 添加图片按钮 -->
+          <view class='uploadPic-li' bindtap="uploadpic" wx:if="{{tempFilePaths.length<imgnum}}">
+            <view class='uploadPic-li-camer iconfont icon-tianjiajiahaowubiankuang'></view>
+          </view>
+        </movable-area>
+      </view>
+    </view>
+  </view>
+  <view class="content2">
+    <view>标签</view>
+    <view class="bq">
+      <view class="bqs" wx:for="{{bq}}" wx:key="index">{{item}}</view>
+    </view>
+  </view>
+  <!-- 底部说明和按钮 -->
+  <view class='uploadPicB'>
+    <view class='uploadPicB-btn' bindtap='uploadPicFinshed'>提交</view>
+  </view>
+</view>
